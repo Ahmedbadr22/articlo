@@ -12,4 +12,11 @@
     <string name="on_boarding_1_subtitle">مع ارتكلو انه من السهل علي كل الناس كتابه مقالات ونشرها اونلاين ليراها جميع من بالعالم</string>
     <string name="on_boarding_2_title">هيا نتواصل مع العديد من الكتاب الان</string>
     <string name="on_boarding_2_subtitle">مع ارتكلو انه من السهل علي كل الناس كتابه مقالات ونشرها اونلاين ليراها جميع من بالعالم</string>
+    <string name="hello_there">مرحبا هناك 👋</string>
+    <string name="please_enter_your_username_email_and_password_to_sign_in">من فضلك ادخل اسم المستخدم او عنوان البريد الاليكتروني لتسجيل الدخول</string>
+    <string name="username_email">اسم المستخدم/البريد الاليكتروني</string>
+    <string name="password">الرقم السري</string>
+    <string name="forgot_password">نسيت كلمه المرور</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="create_new_account">انشاء حساب جديد</string>
 </resources>
