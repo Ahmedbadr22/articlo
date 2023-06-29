@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.annotation.StringRes
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.codersinvasion.articlo.R
 import com.codersinvasion.articlo.databinding.FragmentOnBoardingBinding
@@ -71,8 +72,14 @@ class OnBoardingFragment : Fragment() {
 
             btnNext.setOnClickListener {
                 if (pagePosition < 2) pagePosition += 1
+                else navigateToLoginScreen()
             }
         }
+    }
+
+    private fun navigateToLoginScreen() {
+        val navAction = OnBoardingFragmentDirections.actionOnBoardingFragmentToLoginFragment()
+        findNavController().navigate(navAction)
     }
 
     private fun setNextButtonName(@StringRes stringRes: Int) {
