@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Articlo</string>
+    <string name="app_icon_logo">App icon logo</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="start">Start</string>
+    <string name="on_boarding_0_title">Read interesting articles every single day!</string>
+    <string name="on_boarding_0_subtitle">In today’s digital age, it’s easier than ever to access exciting articles. Discover where to read good articles in this article.</string>
+    <string name="on_boarding_1_title">Create &amp; Publish your own articles to the world!</string>
+    <string name="on_boarding_1_subtitle">With Articlo, it is easy for anyone to  publish articles online.</string>
+    <string name="on_boarding_2_title">Let\'s Connect with others right now!</string>
+    <string name="on_boarding_2_subtitle">With Articlo, it is easy for anyone to learn how to publish articles online.</string>
+</resources>

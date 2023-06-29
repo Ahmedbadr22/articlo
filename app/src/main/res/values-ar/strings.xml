@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ارتكلو</string>
+    <string name="app_icon_logo">ايقونه لوجو التطبيق</string>
+    <string name="skip">تخطي</string>
+    <string name="next">التالي</string>
+    <string name="start">ابدا</string>
+
+    <string name="on_boarding_0_title">"اقراء المقالات المشوقه في كل يوم. "</string>
+    <string name="on_boarding_0_subtitle">في هذا العصر انه من السهل مقارنتا بالعصور القديمه ان نصل الي المقالات و نكتشف اجدد الاخبار لاعظم الكتاب حول العالم</string>
+    <string name="on_boarding_1_title">انشئ وانشر مقالاتك الخاصه ليراها جميع العالم.</string>
+    <string name="on_boarding_1_subtitle">مع ارتكلو انه من السهل علي كل الناس كتابه مقالات ونشرها اونلاين ليراها جميع من بالعالم</string>
+    <string name="on_boarding_2_title">هيا نتواصل مع العديد من الكتاب الان</string>
+    <string name="on_boarding_2_subtitle">مع ارتكلو انه من السهل علي كل الناس كتابه مقالات ونشرها اونلاين ليراها جميع من بالعالم</string>
+</resources>

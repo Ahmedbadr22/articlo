@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Articlo" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brown</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.Articlo" parent="Base.Theme.Articlo" />
+</resources>
