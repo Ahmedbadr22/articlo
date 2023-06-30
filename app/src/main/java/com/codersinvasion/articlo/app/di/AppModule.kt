@@ -2,7 +2,7 @@ package com.codersinvasion.articlo.app.di
 
 
 
-import com.codersinvasion.articlo.app.constants.API
+import com.codersinvasion.constants.API
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import org.koin.dsl.module
 import retrofit2.Retrofit
@@ -19,6 +19,5 @@ val appModule = module {
             .baseUrl(API.BASE_URL)
             .build()
     }
-
 
 }
