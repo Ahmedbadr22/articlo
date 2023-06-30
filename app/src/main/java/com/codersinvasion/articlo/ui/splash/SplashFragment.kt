@@ -8,8 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.codersinvasion.articlo.app.constants.APP
 import com.codersinvasion.articlo.databinding.FragmentSplashBinding
+import com.codersinvasion.constants.APP
 
 
 class SplashFragment : Fragment() {

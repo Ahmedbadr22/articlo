@@ -2,6 +2,7 @@ package com.codersinvasion.articlo
 
 import android.app.Application
 import com.codersinvasion.articlo.app.di.appModule
+import com.codersinvasion.articlo.app.di.clientService
 import com.codersinvasion.articlo.app.di.dataSourceModule
 import com.codersinvasion.articlo.app.di.repositoryModule
 import com.codersinvasion.articlo.app.di.useCaseModule
@@ -20,6 +21,7 @@ class MainApplication: Application() {
             modules(
                 listOf(
                     appModule,
+                    clientService,
                     dataSourceModule,
                     repositoryModule,
                     useCaseModule,
