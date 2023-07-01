@@ -29,7 +29,7 @@ class LoginUsecaseTest {
         val loginUiState = LoginUiState("", "123456789")
         val resource = loginUsecase(loginUiState)
         assert(resource is Resource.Failure)
-        assertEquals(FailureStatus.INVALID_EMAIL, resource.failureStatus)
+        assertEquals(FailureStatus.INVALID_EMAIL, (resource as Resource.Failure).failureStatus)
     }
 
     @Test
@@ -38,7 +38,7 @@ class LoginUsecaseTest {
         val loginUiState = LoginUiState("ahmed@gmail.com", "")
         val resource = loginUsecase(loginUiState)
         assert(resource is Resource.Failure)
-        assertEquals(FailureStatus.INVALID_PASSWORD, resource.failureStatus)
+        assertEquals(FailureStatus.INVALID_PASSWORD, (resource as Resource.Failure).failureStatus)
     }
 
     @Test
@@ -47,7 +47,10 @@ class LoginUsecaseTest {
         val loginUiState = LoginUiState("mohamed@gmail.com", "123456789")
         val resource = loginUsecase(loginUiState)
         assert(resource is Resource.Failure)
-        assertEquals(FailureStatus.UN_AUTHORIZED, resource.failureStatus)
+        if (resource is Resource.Failure) {
+            assert(true)
+            assertEquals(FailureStatus.UN_AUTHORIZED, resource.failureStatus)
+        }
     }
 
     @Test
@@ -56,7 +59,7 @@ class LoginUsecaseTest {
         val loginUiState = LoginUiState("ahmed@gmail.com", "12345")
         val resource = loginUsecase(loginUiState)
         assert(resource is Resource.Failure)
-        assertEquals(FailureStatus.UN_AUTHORIZED, resource.failureStatus)
+        assertEquals(FailureStatus.UN_AUTHORIZED, (resource as Resource.Failure).failureStatus)
     }
 
     @Test
@@ -65,6 +68,6 @@ class LoginUsecaseTest {
         val loginUiState = LoginUiState("ahmed@gmail.com", "123456789")
         val resource = loginUsecase(loginUiState)
         assert(resource is Resource.Success)
-        assert(resource.data != null)
+        assert((resource as Resource.Success).data != null)
     }
 }

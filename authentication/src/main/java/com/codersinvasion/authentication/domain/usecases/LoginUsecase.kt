@@ -31,7 +31,8 @@ class LoginUsecase(
       val tokenResponse: TokenResponse = resource.data!!
       Resource.Success(tokenResponse.toToken())
     } else {
-      Resource.Failure(resource.failureStatus!!)
+      val failureStatus: FailureStatus = (resource as Resource.Failure).failureStatus
+      Resource.Failure(failureStatus)
     }
   }
 
