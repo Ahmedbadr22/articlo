@@ -1,4 +1,4 @@
-package com.codersinvasion.authentication.repository
+package com.codersinvasion.authentication.data.repository
 
 import com.codersinvasion.authentication.data.model.request.LoginRequest
 import com.codersinvasion.authentication.data.repository.login.LoginRepositoryImpl
