@@ -2,11 +2,8 @@ package com.codersinvasion.utils.resource
 
 import com.codersinvasion.utils.network.FailureStatus
 
-sealed class Resource<S> (
-    val data: S? = null,
-    val failureStatus: FailureStatus? = null,
-) {
-    class Success<S>(data: S?) : Resource<S>(data)
-    class Failure<S>(error: FailureStatus) : Resource<S>( null, error)
-    class Loading<S> : Resource<S>()
+sealed class Resource<out T>  {
+    data class Success<out T>(val data: T?) : Resource<T>()
+    data class Failure(val failureStatus: FailureStatus) : Resource<Nothing>()
+    object Loading: Resource<Nothing>()
 }
