@@ -25,6 +25,15 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.codersinvasion.articlo.ui.login.view.LoginFragment"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_loadingDialog"
+            app:destination="@id/loadingDialog" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/loadingDialog"
+        android:name="com.codersinvasion.articlo.ui.dialogs.view.LoadingDialog"
+        tools:layout="@layout/loading_dialog" />
 
 </navigation>
