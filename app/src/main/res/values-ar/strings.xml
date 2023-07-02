@@ -19,4 +19,7 @@
     <string name="forgot_password">نسيت كلمه المرور</string>
     <string name="login">تسجيل الدخول</string>
     <string name="create_new_account">انشاء حساب جديد</string>
+    <string name="user_icon_image">ايقونه المستخدم</string>
+    <string name="loading">جار التحميل...</string>
+    <string name="please_wait_while_your_process_finish_it_may_take_seconds">من فضلك انتظر ريسما يتم التحميل, قد يستغرق ثوان بسيطه</string>
 </resources>

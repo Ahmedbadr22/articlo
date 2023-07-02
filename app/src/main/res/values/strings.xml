@@ -19,4 +19,7 @@
     <string name="forgot_password">Forgot Password</string>
     <string name="login">Login</string>
     <string name="create_new_account">Create new account</string>
+    <string name="user_icon_image">User Icon Image</string>
+    <string name="loading">Loading…</string>
+    <string name="please_wait_while_your_process_finish_it_may_take_seconds">Please wait while your process finish, it may take seconds</string>
 </resources>
