@@ -10,8 +10,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none"
-        android:scrollIndicators="none">
+        android:scrollIndicators="none"
+        android:scrollbars="none">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -80,9 +80,9 @@
                     android:id="@+id/fab_edit"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    app:strokeWidth="0dp"
                     android:layout_gravity="bottom|end"
-                    app:cardBackgroundColor="?attr/colorPrimary">
+                    app:cardBackgroundColor="?attr/colorPrimary"
+                    app:strokeWidth="0dp">
 
 
                     <ImageView
