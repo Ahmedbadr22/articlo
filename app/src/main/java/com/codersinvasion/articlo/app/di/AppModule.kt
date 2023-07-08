@@ -2,6 +2,7 @@ package com.codersinvasion.articlo.app.di
 
 
 
+import android.app.Application
 import com.codersinvasion.constants.API
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import org.koin.dsl.module
@@ -20,4 +21,7 @@ val appModule = module {
             .build()
     }
 
+    single {
+        get<Application>().resources
+    }
 }

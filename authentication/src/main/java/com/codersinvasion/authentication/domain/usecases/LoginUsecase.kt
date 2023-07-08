@@ -14,39 +14,43 @@ import com.codersinvasion.utils.resource.Validator
 import com.codersinvasion.utils.validators.isValidEmail
 
 class LoginUsecase(
-  private val loginRepository: LoginRepository
+    private val loginRepository: LoginRepository
 ) : BaseIOUsecase<LoginUiState, Resource<Token>> {
 
-  override suspend fun invoke(input: LoginUiState): Resource<Token> {
-    val validator: Validator = validateInput(input)
+    override suspend fun invoke(input: LoginUiState): Resource<Token> {
+        val validator: Validator = validateInput(input)
 
-    if (validator is Validator.InValid) {
-      return Resource.Failure(validator.failureStatus!!)
+        if (validator is Validator.InValid) {
+            return Resource.Failure(validator.failureStatus!!)
+        }
+
+        val loginRequest: LoginRequest = input.toLoginRequest()
+        val resource = loginRepository.login(loginRequest)
+
+        return if (resource is Resource.Success) {
+            val tokenResponse: TokenResponse = resource.data!!
+            Resource.Success(tokenResponse.toToken())
+        } else {
+            val failureStatus: FailureStatus = (resource as Resource.Failure).failureStatus
+            Resource.Failure(failureStatus)
+        }
     }
 
-    val loginRequest : LoginRequest = input.toLoginRequest()
-    val resource = loginRepository.login(loginRequest)
+    override fun validateInput(input: LoginUiState): Validator {
+        if (input.email.isEmpty() || input.password.isEmpty()) {
+            return Validator.InValid(FailureStatus.EMPTY_EMAIL_OR_PASSWORD)
+        }
 
-    return if (resource is Resource.Success) {
-      val tokenResponse: TokenResponse = resource.data!!
-      Resource.Success(tokenResponse.toToken())
-    } else {
-      val failureStatus: FailureStatus = (resource as Resource.Failure).failureStatus
-      Resource.Failure(failureStatus)
+        if (!input.email.isValidEmail()) {
+            return Validator.InValid(FailureStatus.INVALID_EMAIL)
+        }
+
+        if (input.password.length < 6) {
+            return Validator.InValid(FailureStatus.INVALID_PASSWORD)
+        }
+
+        return Validator.Valid
     }
-  }
-
-  override fun validateInput(input: LoginUiState): Validator {
-    if (input.email.isEmpty() || !input.email.isValidEmail()) {
-      return Validator.InValid(FailureStatus.INVALID_EMAIL)
-    }
-
-    if (input.password.isEmpty()) {
-      return Validator.InValid(FailureStatus.INVALID_PASSWORD)
-    }
-
-    return Validator.Valid
-  }
 
 
 }
