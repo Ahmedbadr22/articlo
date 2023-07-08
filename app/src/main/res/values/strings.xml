@@ -29,4 +29,8 @@
     <string name="no_internet_connection">No internet connection</string>
     <string name="server_error">Server error</string>
     <string name="unknown_error">Unknown error</string>
+    <string name="navigate_back_arrow">Navigate back arrow</string>
+    <string name="which_country_are_you_from">Which country are you from? 🏳️</string>
+    <string name="search">Search</string>
+    <string name="please_select_country_of_origin">Please select country of origin.</string>
 </resources>
