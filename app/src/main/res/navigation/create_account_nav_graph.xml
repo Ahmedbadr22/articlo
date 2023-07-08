@@ -9,5 +9,15 @@
     <fragment
         android:id="@+id/selectCountryFragment"
         android:name="com.codersinvasion.articlo.ui.create_account.view.SelectCountryFragment"
-        tools:layout="@layout/fragment_select_country"/>
+        tools:layout="@layout/fragment_select_country" >
+        <action
+            android:id="@+id/action_selectCountryFragment_to_completeYourProfileFragment"
+            app:destination="@id/completeYourProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/completeYourProfileFragment"
+        android:name="com.codersinvasion.articlo.ui.create_account.view.CompleteYourProfileFragment"
+        tools:layout="@layout/fragment_complete_your_profile" />
+
 </navigation>

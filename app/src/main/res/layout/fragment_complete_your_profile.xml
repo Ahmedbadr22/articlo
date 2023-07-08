@@ -10,8 +10,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.create_account.view.CompleteYourProfileFragment"
-        android:padding="16dp">
+        android:padding="16dp"
+        tools:context=".ui.create_account.view.CompleteYourProfileFragment">
 
         <TextView
             android:id="@+id/tv_complete_your_profile"
@@ -43,21 +43,20 @@
             android:id="@+id/fl_user_image"
             android:layout_width="150dp"
             android:layout_height="150dp"
+            android:layout_marginTop="32dp"
             android:clickable="true"
             android:focusable="true"
-            android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_please_select_country_of_origin">
 
 
-
             <com.google.android.material.circularreveal.cardview.CircularRevealCardView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
+                android:layout_gravity="center"
                 app:cardCornerRadius="100dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_gravity="center"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_please_select_country_of_origin">
 
@@ -83,9 +82,9 @@
                     android:id="@+id/iv_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/edit"
                     android:layout_gravity="center"
-                    android:contentDescription="@string/edit" />
+                    android:contentDescription="@string/edit"
+                    android:src="@drawable/edit" />
             </com.google.android.material.card.MaterialCardView>
         </FrameLayout>
 
@@ -158,10 +157,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:hint="@string/date_of_birth"
-            app:startIconDrawable="@drawable/calendar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rg_gender">
+            app:layout_constraintTop_toBottomOf="@+id/rg_gender"
+            app:startIconDrawable="@drawable/calendar">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/ti_date_of_birth"
