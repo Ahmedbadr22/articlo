@@ -36,4 +36,5 @@
         android:name="com.codersinvasion.articlo.ui.dialogs.view.LoadingDialog"
         tools:layout="@layout/loading_dialog" />
 
+
 </navigation>

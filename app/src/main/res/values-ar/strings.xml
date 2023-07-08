@@ -29,4 +29,8 @@
     <string name="no_internet_connection">لا يوجد اتصال بي الانترنت</string>
     <string name="server_error">خطأ بالخادم</string>
     <string name="unknown_error">خطأ غير معروف</string>
+    <string name="navigate_back_arrow">سهم الرجوع الي الخلف</string>
+    <string name="which_country_are_you_from">من اي بلد انت؟ 🏳️</string>
+    <string name="search">بحث</string>
+    <string name="please_select_country_of_origin">الرجاء تحديد بلد المنشأ.</string>
 </resources>

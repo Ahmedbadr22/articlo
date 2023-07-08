@@ -2,9 +2,13 @@
 <resources>
 
     <!-- Text -->
-    <style name="TextAppearance.Material3.HeadlineSmall.Header" parent="Base.Widget.Material3.CardView">
+    <style name="TextAppearance.Material3.HeadlineSmall.Header" parent="TextAppearance.Material3.HeadlineLarge">
         <item name="android:textSize">@dimen/_20sdp</item>
         <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Material3.HeadlineLarge.MainTitle" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="TextAppearance.Material3.TitleLarge.AppLogo" parent="TextAppearance.Material3.TitleLarge">
