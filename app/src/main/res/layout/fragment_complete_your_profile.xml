@@ -77,9 +77,10 @@
                 </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
 
                 <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/floatingActionButton"
+                    android:id="@+id/fab_edit"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
+                    app:strokeWidth="0dp"
                     android:layout_gravity="bottom|end"
                     app:cardBackgroundColor="?attr/colorPrimary">
 
