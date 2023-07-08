@@ -10,7 +10,9 @@ enum class FailureStatus {
     INTERNAL_ERROR,
     NO_INTERNET,
     UN_KNOWN,
+    NOT_FOUND,
     // Fields
+    EMPTY_EMAIL_OR_PASSWORD,
     INVALID_EMAIL,
     INVALID_PASSWORD,
 }
@@ -28,6 +30,9 @@ inline fun <reified T> safeApiCall(apiCall: () -> Response<T>): Resource<T> {
             }
             400 -> {
                 Resource.Failure(FailureStatus.BAD_REQUEST)
+            }
+            404 -> {
+                Resource.Failure(FailureStatus.NOT_FOUND)
             }
             500 -> {
                 Resource.Failure(FailureStatus.INTERNAL_ERROR)

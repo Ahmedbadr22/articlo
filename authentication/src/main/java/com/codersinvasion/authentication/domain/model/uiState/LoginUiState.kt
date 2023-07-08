@@ -1,6 +1,8 @@
 package com.codersinvasion.authentication.domain.model.uiState
 
+
 data class LoginUiState(
-    val email: String,
-    val password: String,
+    var email: String,
+    var password: String,
+    var mainError: String = "",
 )

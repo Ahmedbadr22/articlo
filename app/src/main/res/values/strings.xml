@@ -22,4 +22,11 @@
     <string name="user_icon_image">User Icon Image</string>
     <string name="loading">Loading…</string>
     <string name="please_wait_while_your_process_finish_it_may_take_seconds">Please wait while your process finish, it may take seconds</string>
+    <string name="please_enter_all_required_fields">Please enter all required fields</string>
+    <string name="wrong_email_or_password">Wrong email address or password</string>
+    <string name="invalid_email_address">Invalid email address</string>
+    <string name="password_cant_be_less_than_6">Password can\'t be less than 6 characters</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="server_error">Server error</string>
+    <string name="unknown_error">Unknown error</string>
 </resources>
