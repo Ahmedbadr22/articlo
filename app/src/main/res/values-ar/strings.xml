@@ -33,4 +33,13 @@
     <string name="which_country_are_you_from">من اي بلد انت؟ 🏳️</string>
     <string name="search">بحث</string>
     <string name="please_select_country_of_origin">الرجاء تحديد بلد المنشأ.</string>
+    <string name="complete_your_profile">اكمل ملفك الشخصي. 🗒️</string>
+    <string name="don_t_worry_only_ypu_can_see_your_personal_data_no_one_will_be_able_to_see_it">لا تقلق ، أنت فقط من يستطيع رؤية بياناتك الشخصية. لن يتمكن أحد من رؤيتها.</string>
+    <string name="user_image">صوره المستخدم</string>
+    <string name="edit">تعديل</string>
+    <string name="full_name">الاسم بالكامل</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="male">ذكر</string>
+    <string name="female">انثي</string>
+    <string name="date_of_birth">تاريخ الميلاد</string>
 </resources>
