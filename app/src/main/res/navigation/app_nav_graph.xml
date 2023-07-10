@@ -29,12 +29,19 @@
         <action
             android:id="@+id/action_loginFragment_to_loadingDialog"
             app:destination="@id/loadingDialog" />
+        <action
+            android:id="@+id/action_loginFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
     </fragment>
 
     <dialog
         android:id="@+id/loadingDialog"
         android:name="com.codersinvasion.articlo.ui.dialogs.view.LoadingDialog"
         tools:layout="@layout/loading_dialog" />
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.codersinvasion.articlo.ui.create_account.view.CreateAccountFragment"
+        tools:layout="@layout/fragment_create_account"/>
 
 
 </navigation>

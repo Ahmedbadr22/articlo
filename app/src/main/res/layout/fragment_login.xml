@@ -7,6 +7,10 @@
         <variable
             name="viewModel"
             type="com.codersinvasion.articlo.ui.login.viewModel.LoginViewModel" />
+
+        <variable
+            name="clickListener"
+            type="com.codersinvasion.articlo.ui.login.listener.LoginScreenClickListener" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -104,6 +108,7 @@
             android:layout_height="@dimen/_40sdp"
             android:layout_marginTop="8dp"
             style="?attr/materialButtonOutlinedStyle"
+            android:onClick="@{() -> clickListener.navigateToRegistrationScreen()}"
             android:text="@string/create_new_account"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
