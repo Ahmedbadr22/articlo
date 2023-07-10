@@ -30,6 +30,7 @@ class LoginFragment : Fragment(), LoginScreenClickListener {
 
         binding.apply {
             lifecycleOwner = this@LoginFragment
+            clickListener = this@LoginFragment
             viewModel = loginViewModel
         }
 
@@ -52,7 +53,8 @@ class LoginFragment : Fragment(), LoginScreenClickListener {
     }
 
     override fun navigateToRegistrationScreen() {
-
+        val navAction = LoginFragmentDirections.actionLoginFragmentToCreateAccountFragment()
+        findNavController().navigate(navAction)
     }
 
 }
