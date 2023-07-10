@@ -42,4 +42,9 @@
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="date_of_birth">Date of birth</string>
+    <string name="create_an_account">Create an account 🔐</string>
+    <string name="enter_your_email_amp_password_if_you_forgot_it_then_you_have_to_do_forget_password"><![CDATA[Enter your email & password. if you forgot it, then you have to do forget password.]]></string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>

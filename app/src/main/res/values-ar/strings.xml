@@ -42,4 +42,9 @@
     <string name="male">ذكر</string>
     <string name="female">انثي</string>
     <string name="date_of_birth">تاريخ الميلاد</string>
+    <string name="create_an_account">انشأ حساب 🔐</string>
+    <string name="enter_your_email_amp_password_if_you_forgot_it_then_you_have_to_do_forget_password">ادخل عنوان البريد الاليكتروني و الرقم السري, لو نسيت الرقم السري يمكنك الضغط علي نسيت الرقم السري وسيتم الاسترجاع</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="email">عنوان البريد الاليكتروني</string>
+    <string name="confirm_password">تاكيد الرقم السري</string>
 </resources>
