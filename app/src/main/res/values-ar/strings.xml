@@ -49,4 +49,7 @@
     <string name="confirm_password">تاكيد الرقم السري</string>
     <string name="select_your_topics_of_interest">"اختار "</string>
     <string name="select_your_topics_of_interest_for_better_recommendations_or_you_can_skip">اختار المواضيع التي تهتم بها 🏷️.</string>
+    <string name="pick_some_people_to_follow">اختار بعض المستخدمين للمتابعه</string>
+    <string name="discover_people">اكتشف الاشخاص 🥰</string>
+    <string name="follow">تابع</string>
 </resources>
