@@ -47,4 +47,9 @@
     <string name="username">Username</string>
     <string name="email">Email</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="select_your_topics_of_interest">Select your topics of interest 🏷️</string>
+    <string name="select_your_topics_of_interest_for_better_recommendations_or_you_can_skip">Select your topics of interest for better recommendations or you can skip.</string>
+    <string name="pick_some_people_to_follow">Pick some people to follow</string>
+    <string name="discover_people">Discover People 🥰</string>
+    <string name="follow">Follow</string>
 </resources>
