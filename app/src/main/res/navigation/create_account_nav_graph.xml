@@ -18,6 +18,22 @@
     <fragment
         android:id="@+id/completeYourProfileFragment"
         android:name="com.codersinvasion.articlo.ui.create_account.view.CompleteYourProfileFragment"
-        tools:layout="@layout/fragment_complete_your_profile" />
+        tools:layout="@layout/fragment_complete_your_profile" >
+        <action
+            android:id="@+id/action_completeYourProfileFragment_to_createAnAccountFragment"
+            app:destination="@id/createAnAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAnAccountFragment"
+        android:name="com.codersinvasion.articlo.ui.create_account.view.CreateAnAccountFragment"
+        tools:layout="@layout/fragment_create_an_account">
+        <action
+            android:id="@+id/action_createAnAccountFragment_to_selectTopicsOfInterestFragment"
+            app:destination="@id/selectTopicsOfInterestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectTopicsOfInterestFragment"
+        android:name="com.codersinvasion.articlo.ui.create_account.view.SelectTopicsOfInterestFragment"
+        tools:layout="@layout/fragment_select_topics_of_interest" />
 
 </navigation>

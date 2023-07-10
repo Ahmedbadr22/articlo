@@ -47,4 +47,6 @@
     <string name="username">اسم المستخدم</string>
     <string name="email">عنوان البريد الاليكتروني</string>
     <string name="confirm_password">تاكيد الرقم السري</string>
+    <string name="select_your_topics_of_interest">"اختار "</string>
+    <string name="select_your_topics_of_interest_for_better_recommendations_or_you_can_skip">اختار المواضيع التي تهتم بها 🏷️.</string>
 </resources>
