@@ -40,7 +40,9 @@ android {
 dependencies {
     implementation project(path: ':core:constants')
     implementation project(path: ':core:utils')
+    implementation project(path: ':core:db')
     implementation project(path: ':authentication')
+    implementation project(path: ':country')
 
     def nav_version = "2.6.0"
     def lifecycle_version = "2.6.0-alpha04"
@@ -99,4 +101,9 @@ dependencies {
 
     // jwt decoder
     implementation 'com.auth0.android:jwtdecode:2.0.2'
+
+
+    // Coil
+    implementation "io.coil-kt:coil:2.2.2"
+    implementation "io.coil-kt:coil-svg:2.4.0"
 }
