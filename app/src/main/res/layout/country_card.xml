@@ -4,6 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+        <variable
+            name="countryUiState"
+            type="com.codersinvasion.country.domain.model.CountryUiState" />
+
+        <variable
+            name="clickListener"
+            type="com.codersinvasion.utils.callback.AdapterClickListener" />
 
     </data>
 
@@ -14,8 +21,10 @@
         android:layout_marginHorizontal="16dp"
         app:cardCornerRadius="15dp"
         app:cardElevation="0dp"
-        app:strokeWidth="1dp"
-        app:strokeColor="@color/gray"
+        app:strokeWidth="@{countryUiState.selected ? 3 : 1}"
+        android:layoutDirection="ltr"
+        android:onClick="@{() -> clickListener.onClick(countryUiState.country)}"
+        app:strokeColor="@{countryUiState.selected ? @color/brown : @color/gray}"
         android:layout_marginVertical="8dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -38,8 +47,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
+                    android:uploadSvgPath="@{countryUiState.country.flagPath}"
                     tools:srcCompat="@tools:sample/backgrounds/scenic"
-                    android:contentDescription="Country Name" />
+                    android:contentDescription="@{countryUiState.country.name}" />
             </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
 
             <TextView
@@ -48,6 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:textAllCaps="true"
+                android:text="@{countryUiState.country.abbreviation}"
                 style="@style/TextAppearance.Material3.TitleMedium"
                 android:textColor="@color/gray"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -62,6 +73,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:maxLines="1"
+                android:text="@{countryUiState.country.name}"
                 style="@style/TextAppearance.Material3.TitleLarge"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
