@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.codersinvasion.articlo.databinding.FragmentSelectCountryBinding
 import com.codersinvasion.articlo.ui.create_account.adapter.CountryAdapter
@@ -20,6 +21,7 @@ class SelectCountryFragment : Fragment() {
 
     private val onCountrySelectedClickListener: AdapterClickListener<Country> = AdapterClickListener { selectedCountry ->
         createAccountViewModel.onCountrySelected(selectedCountry.id)
+        navigateToCompleteYourProfileScreen()
     }
 
     private lateinit var countryAdapter: CountryAdapter
@@ -54,4 +56,8 @@ class SelectCountryFragment : Fragment() {
         }
     }
 
+    private fun navigateToCompleteYourProfileScreen() {
+        val navAction = SelectCountryFragmentDirections.actionSelectCountryFragmentToCompleteYourProfileFragment()
+        findNavController().navigate(navAction)
+    }
 }
